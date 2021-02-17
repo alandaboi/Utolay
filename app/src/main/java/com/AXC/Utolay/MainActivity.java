@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Switch bgm = findViewById(R.id.bgm);
-        bgm.setChecked(sharedPreferences.getBoolean("bgm", false));
+        bgm.setChecked(sharedPreferences.getBoolean("bgm", true));
         bgm.setOnCheckedChangeListener((v, b) -> {
             Log.v("USERINFO", "bgm'd");
             sharedPreferences.edit().putBoolean("bgm", b).apply();
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Check for overlay permission. If not enabled, request for it. If enabled, show the overlay
         if (Build.VERSION.SDK_INT >= 23 && !Settings.canDrawOverlays(context)) {
-            new AlertDialog.Builder(context)
+            AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this)
                     .setTitle("Missing Permissions")
                     .setMessage("This App Requires Screen Overlay Permission to run.")
                     .setPositiveButton("Agree", (dialog, which) -> {
@@ -121,7 +121,8 @@ public class MainActivity extends AppCompatActivity {
                         finishAndRemoveTask();
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
-                    .show();
+                    .create();
+            alertDialog.show();
             }
     }
 }
