@@ -7,8 +7,10 @@
  You can choose to have it play her BGM and/or have her "talk" when you tap on the overlay.
  A few screenshots from my phone because that should explain it easier.   
  
- ![MainScreen](https://github.com/alandaboi/Utolay/blob/main/images/Main%20Screen.jpg?raw=true) | ![InAction](https://github.com/alandaboi/Utolay/blob/main/images/In%20Action.jpg?raw=true)
- 
+ <p float="left">
+  <img src="/images/Main%20Screen.jpg" width="100" />
+  <img src="/images/In%20Action.jpg" width="100" /> 
+</p> 
  
  ## Info
  Still in alpha testing, feedback welcome.   
