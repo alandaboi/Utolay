@@ -1,9 +1,11 @@
 package com.AXC.Utolay;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("StaticFieldLeak")
     protected static Context context;
     protected static int x, y;
+    protected static ImageView imageView;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -40,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("MyPref", 0);
         context = getApplicationContext();
         Helper.main();
-        ImageView imageView = findViewById(R.id.toggle);
+        imageView = findViewById(R.id.toggle);
         if (sharedPreferences.getBoolean("service", false))
             imageView.setImageResource(R.drawable.uto_skin);
         else
@@ -104,11 +107,21 @@ public class MainActivity extends AppCompatActivity {
 
         // Check for overlay permission. If not enabled, request for it. If enabled, show the overlay
         if (Build.VERSION.SDK_INT >= 23 && !Settings.canDrawOverlays(context)) {
-            CharSequence text = "Please grant the access to the application.";
-            int duration = Toast.LENGTH_LONG;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-            startActivity(new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.fromParts("package", getPackageName(), null)));
-        }
+            new AlertDialog.Builder(context)
+                    .setTitle("Missing Permissions")
+                    .setMessage("This App Requires Screen Overlay Permission to run.")
+                    .setPositiveButton("Agree", (dialog, which) -> {
+                        CharSequence text = "Please grant the access to the application.";
+                        int duration = Toast.LENGTH_LONG;
+                        Toast toast = Toast.makeText(context, text, duration);
+                        toast.show();
+                        startActivity(new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.fromParts("package", getPackageName(), null)));
+                    })
+                    .setNegativeButton("No thanks", (dialog, which) -> {
+                        finishAndRemoveTask();
+                    })
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .show();
+            }
     }
 }

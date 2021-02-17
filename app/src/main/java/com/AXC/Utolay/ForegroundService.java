@@ -79,10 +79,9 @@ public class ForegroundService extends Service {
             music.stop();
         if (mediaPlayer != null && mediaPlayer.isPlaying())
             mediaPlayer.stop();
+        MainActivity.imageView.setImageResource(R.drawable.uto_skin_gray);
         alive = false;
     }
-
-
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
