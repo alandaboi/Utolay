@@ -19,7 +19,8 @@
  
  Google Play Version in progress.   
  You can download the APK file [here](https://github.com/alandaboi/Utolay/blob/main/app/release/Utolay.apk?raw=true).
- Do note that if you choose to download through the APK, Google Play Protect will warn you of potential dangers. All of the code is open source, so if you don't trust it you can compile it yourself.
+ Do note that if you choose to download through the APK, Google Play Protect will warn you that there could be potential dangers. 
+ All of the code is open source, so if you don't trust it you can compile it yourself using Android Studio.
  
  Check out Amatsuka Uto on [YouTube](https://www.youtube.com/c/%E5%A4%A9%E4%BD%BF%E3%81%86%E3%81%A8AmatsukaUto) and [Twitter](https://twitter.com/amatsukauto)!
  Special thanks to [Ryujinosa](https://www.youtube.com/channel/UCZQusTUyDKZTEhILHkKsvMw) for clipping videos where I got my audio sources from.
