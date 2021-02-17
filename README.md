@@ -8,8 +8,8 @@
  A few screenshots from my phone because that should explain it easier.   
  
  <p float="left">
-  <img src="/images/Main%20Screen.jpg" width="100" />
-  <img src="/images/In%20Action.jpg" width="100" /> 
+  <img src="/images/Main%20Screen.jpg" width="300" />
+  <img src="/images/In%20Action.jpg" width="300" /> 
 </p> 
  
  ## Info
