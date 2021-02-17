@@ -7,12 +7,12 @@
  You can choose to have it play her BGM and/or have her "talk" when you tap on the overlay.
  A few screenshots from my phone because that should explain it easier.
  
- ![MainScreen]()
- ![InAction]()
+ ![MainScreen](https://github.com/alandaboi/Utolay/blob/main/images/Main%20Screen.jpg?raw=true)
+ ![InAction](https://github.com/alandaboi/Utolay/blob/main/images/In%20Action.jpg?raw=true)
  
  
  ## Info
- Still in beta testing, feedback welcome.
+ Still in alpha testing, feedback welcome.
  Discord: Nyzio#2197.
  Email: axcdevelopment@gmail.com
  
@@ -20,7 +20,7 @@
  You can download the APK file [here](https://github.com/alandaboi/Utolay/blob/main/app/release/Utolay.apk?raw=true).
  
  Check out Amatsuka Uto on [YouTube](https://www.youtube.com/c/%E5%A4%A9%E4%BD%BF%E3%81%86%E3%81%A8AmatsukaUto) and [Twitter](https://twitter.com/amatsukauto)!
- Special thanks to [Ryujinosa](https://www.youtube.com/channel/UCZQusTUyDKZTEhILHkKsvMw) for making this easier.
+ Special thanks to [Ryujinosa](https://www.youtube.com/channel/UCZQusTUyDKZTEhILHkKsvMw) for clipping videos where I got my audio sources from.
  
  Quick note that all art and audio belong to their respective owners, and that I have no affiliation with any of them. I'm just another Tenshimp.
  
