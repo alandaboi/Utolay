@@ -18,7 +18,7 @@
  Email: axcdevelopment@gmail.com
  
  Google Play Version in progress.   
- You can download the APK file [here](https://github.com/alandaboi/Utolay/blob/main/app/release/Utolay.apk?raw=true).
+ You can download the APK file [here](https://github.com/alandaboi/Utolay/blob/main/app/release/app-release.apk?raw=true).
  Do note that if you choose to download through the APK, Google Play Protect will warn you that there could be potential dangers. 
  All of the code is open source, so if you don't trust it you can compile it yourself using Android Studio.
  
